@@ -1,0 +1,20 @@
+.HeaderButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color : #222831;
+    background-color:white;
+    border: none;
+    /* 버튼 크기 늘리기 */
+    width: 40px;
+    height: 40px;
+    
+    /* 화살표 글자 크기 늘리기 */
+    font-size: 35px;
+    transition: transform 0.1s ease-in-out; /* 부드러운 애니메이션 */
+}
+
+.HeaderButton:active {
+    transform: scale(0.75); /* 버튼을 80% 크기로 줄임 */
+}
+

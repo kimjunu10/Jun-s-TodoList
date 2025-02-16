@@ -1,0 +1,198 @@
+.Header {
+    display:flex;
+    height : 150px;
+    max-height : 150px;
+    flex-direction: column;
+    margin-top:20px;
+    width : 100%;    
+}
+
+.Header > .above{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* 세로 중앙 정렬 */
+    width: 100%;
+    margin : 9px 0;
+    padding : 0;
+}
+
+
+.Header > .above > .date{
+    display: flex;
+    flex-direction: row;
+    width :230px;
+    justify-content: space-around;
+    align-items: center;
+    gap : 10px;
+    margin-left : 150px;
+
+}
+
+.Header .task {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width : 200px;
+    margin-right : 120px;
+}
+
+
+.Header .task .notdone, 
+.Header .task .done {
+    width: 100%;
+    height: 30px;
+    font-size: 20px;
+    text-align: center;
+    margin: 5px 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.Header .task span {
+    color : #a5a5a5;
+}
+
+.Header > .above > .date > .only_date >  h2{
+    margin: 0;
+    font-size: 28px;
+}
+
+.Header > .above > .date > .only_date >  h5 {
+    color : gray;
+    display: flex;
+    align-items: center; /* 세로 중앙 정렬 */
+    gap: 15px; /* 2025과 📅 사이 간격 추가 */
+    font-size:18px;
+    margin : 8px 0 0;
+}
+
+.Header > .above > .date > .only_date h5 button {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    border : none;
+    width : 20px;
+    height : 20px;
+    cursor: pointer;
+    transition: transform 0.1s ease-in-out; /* 부드러운 애니메이션 */
+}
+
+.Header > .above > .date > .only_date h5 button:active {
+    transform: scale(0.75); /* 버튼을 80% 크기로 줄임 */
+}
+
+
+.Header > .under {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    
+}
+
+.task h5 {
+    font-size :15px;
+    padding:0;
+    margin:15px 0;
+}
+
+.Header > .under > hr {
+    margin : 0 30px;
+    height: 2px; /* 두께 설정 */
+    background-color: black; /* 검은색 선 */
+    border: none; /* 기본 테두리 제거 */
+    width: 100%; /* 가로 너비 지정 */
+}
+
+.task > .notdone > span{
+    color:#444444;
+}
+.task > .done > span{
+    color:#444444;
+}
+
+.Header > .under > .summit {
+    margin : 0 5px;
+    position: absolute;
+    left: 85%;
+    border: none;
+    color : #222831;
+    background-color: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 10px;
+    cursor: pointer;
+    top : -22px;
+    transition: transform 0.1s ease-in-out; /* 부드러운 애니메이션 */
+}
+
+.Header > .under > .summit:active {
+    transform: scale(0.75); /* 버튼을 80% 크기로 줄임 */
+}
+
+.react-datepicker__day.has-active,
+.react-datepicker__day.has-done {
+    position: relative;
+}
+
+
+.react-datepicker__day.has-active::after {
+    content: "•";
+    color: red;
+    font-size: 20px;
+    position: absolute;
+    bottom: -8px; 
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.react-datepicker__day.has-done::after {
+    content: "•";
+    color: blue;
+    font-size: 20px;
+    position: absolute;
+    bottom: -8px; 
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.react-datepicker {
+    font-size: 18px; /* 폰트 크기 */
+}
+
+
+.react-datepicker__current-month {
+    width: 100%;
+    height : 100%;
+}
+
+.react-datepicker__month-container {
+    width: 100%; /* 캘린더 영역도 100%로 확장 */
+    height : 100%;
+}
+
+.react-datepicker__month {
+    width: 100%; /* 월 영역도 100%로 확장 */
+    height : 100%;
+}
+
+.react-datepicker__day {
+    font-size: 15px;
+    width: calc(100% / 7); /* 일요일부터 토요일까지 날짜 너비 균등 분배 */
+
+    height: 30px; /* 날짜 버튼 높이 */
+    line-height: 40px;
+    text-align: center;
+}
+
+/* 선택된 날짜 스타일 */
+.react-datepicker__day--selected {
+    background-color: #a5a5a5 !important; /* 원하는 배경색 */
+    border-radius: 50%; /* 원형 모양 */
+}

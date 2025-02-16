@@ -1,0 +1,79 @@
+.TodoList {
+    display: flex;
+    flex-grow: 1;
+    height: calc(85vh - 150px); /* Header를 제외한 높이 */
+    padding: 10px;
+    gap: 20px;
+}
+
+.active, .done {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 100%;
+    flex: 1;
+    max-height: 100%; /* 각 리스트의 최대 높이 */
+    overflow-y: auto; /* 내부 스크롤 활성화 */
+}
+
+.active > h2, .done > h2{
+    margin-top:0;
+}
+
+.TodoList > .active > .active_items, 
+.TodoList > .done > .done_items{
+    display: flex;
+    flex-direction: column;
+    gap : 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+hr {
+    align-self: stretch;
+    width: 0; /* 기본적으로 너비를 없애고 border로만 표시 */
+    border-left: 1px dashed black; /* 세로 점선 */
+    border-width: 1px; /* 점선 두께 조정 */
+}
+
+/* 1. 스크롤바 숨기기 */
+.active::-webkit-scrollbar,
+.done::-webkit-scrollbar {
+    width: 5px; /* 기본적으로 안 보이게 설정 */
+}
+
+/* 2. 마우스를 올리면 스크롤바 보이기 */
+.active:hover::-webkit-scrollbar,
+.done:hover::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+/* 스크롤바 핸들 */
+.active::-webkit-scrollbar-thumb,
+.done::-webkit-scrollbar-thumb {
+    background-color: #bbb;
+    border-radius: 10px;
+}
+
+/* 스크롤바 트랙 */
+.active::-webkit-scrollbar-track,
+.done::-webkit-scrollbar-track {
+    background-color: #ddd;
+    border-radius: 10px;
+}
+
+/* 스크롤바 모서리 숨기기 */
+.active::-webkit-scrollbar-corner,
+.done::-webkit-scrollbar-corner {
+    display: none;
+}
+
+/* 스크롤바 위/아래 버튼 숨기기 */
+.active::-webkit-scrollbar-button:start,
+.active::-webkit-scrollbar-button:end,
+.done::-webkit-scrollbar-button:start,
+.done::-webkit-scrollbar-button:end {
+    display: none;
+}
