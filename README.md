@@ -1,8 +1,31 @@
-# React + Vite
+# 🛠 프로젝트 팀 소개
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 팀 이름
+**팀 [여기에 팀 이름 작성]**
 
-Currently, two official plugins are available:
+## 🧩 팀 룰
+- 매주 월/목 1회 회의
+- 피드백은 솔직하고 구체적으로
+- 일정은 Notion 및 GitHub 이슈로 관리
+- 업무는 주도적으로, 도움은 언제든지 요청 가능
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 👤 팀원 소개
+| 이름 | 역할 | 한줄 소개 |
+|------|------|------------|
+| 서윤 | PM/디자이너 | 흐름과 구조를 책임지는 기획자 |
+| 세민 | 프론트엔드 | React를 사랑하는 개발자 |
+| 준우 | 백엔드 | 효율적인 API 설계를 추구함 |
+| 승찬 | 데이터/AI | 데이터를 통해 문제를 해결함 |
+
+## 💎 팀 가치
+**"서로 다른 관점에서 하나의 목표로"**
+
+## 🚧 현재 진행 현황
+- [x] 아이템 기획 및 시장 조사
+- [x] 페르소나 및 문제 정의 완료
+- [ ] MVP 기능 설계 및 역할 분담
+- [ ] 개발 환경 설정 및 초기 세팅 예정
+
+---
+
+추가로 원한다면, `📂 프로젝트 구조`, `🔗 관련 링크`, `📈 향후 일정` 섹션도 넣을 수 있음. 필요하면 알려줘!
